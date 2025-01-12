@@ -1,0 +1,482 @@
+/* Geral */
+html,
+body {
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+/* Menu e logótipo */
+.circulo,
+.semi-circle {
+    text-align: center;
+    background-color: #e8d1ba;
+    border-radius: 0 0 50px 50px;
+}
+
+.circulo {
+    padding: 20px;
+    position: relative;
+    margin-top: -20px;
+}
+
+
+.circulo a,
+.semi-circle a {
+    text-decoration: none;
+}
+
+.logo-center {
+
+    margin-top: 2%;
+}
+
+nav {
+    margin: 20px;
+    /* Adiciona espaço à esquerda do menu */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    /* Define uma fonte consistente */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(253, 133, 53);
+    /* Cor do texto */
+    text-decoration: none;
+    /* Remove sublinhado */
+    font-size: 18px;
+    /* Tamanho do texto */
+    font-weight: bold;
+    /* Peso da fonte */
+    transition: color 0.3s;
+    text-transform: uppercase;
+    /* Mantém as letras maiúsculas (se necessário) */
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    /* Negrito para o item ativo */
+    color: #532b02;
+    /* Pode também alterar a cor se quiser */
+}
+
+nav ul li a:hover {
+    color: #Ff9933;
+    /* Cor ao passar o rato */
+}
+
+/* Carrossel */
+.carousel-inner {
+    border-radius: 0 0 50px 50px;
+    /* Arredonda apenas as bordas inferiores */
+    overflow: hidden;
+    /* Impede o conteúdo de ultrapassar as bordas */
+}
+
+.carousel-inner .item img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+    /* Ajusta a imagem para não distorcer */
+    margin: 0 auto;
+    border-radius: 0;
+    /* Remove qualquer arredondamento aplicado diretamente à imagem */
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Assegura que a imagem preenche o carrossel sem distorcer */
+}
+
+.carousel-control {
+    border-radius: 0 0 50px 50px;
+    /* Arredonda apenas as bordas inferiores */
+}
+
+/* Footer */
+footer {
+    background-color: #e8d1ba;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    /* Empurra o footer para o fundo */
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer section {
+    flex: 1 1 200px;
+    margin: 10px 15px;
+}
+
+footer h4 {
+    font-size: 20px!important;
+    margin-bottom: 10px!important;
+    color: #Ff9933!important;
+    font-weight: bold!important;
+}
+
+footer p,
+footer a {
+    font-size: 15px!important;
+    line-height: 1.8!important;
+    color: rgb(253, 133, 53)!important;
+    text-decoration: none!important;
+}
+
+footer a:hover {
+    color: #Ff9933;
+}
+
+footer img {
+    display: block;
+    margin: 10 auto 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+footer section img {
+    display: inline-block; /* Torna os ícones alinháveis horizontalmente */
+    margin: 0 5px; /* Adiciona um pequeno espaçamento horizontal entre os ícones */
+    vertical-align: middle; /* Alinha os ícones verticalmente no meio */
+}
+
+/* Responsivo para footer */
+@media (max-width: 768px) {
+    footer div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section {
+        text-align: center;
+    }
+}
+
+/* Container principal Contactos */
+.container-map {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Itens numa só linha */
+    justify-content: space-between;
+    /* Espaço entre o mapa e as informações */
+    align-items: flex-start;
+    margin: 50px auto;
+    /* Margem maior para o container */
+    padding: 30px;
+    /* Espaço interno maior */
+    max-width: 1900px;
+    /* Largura máxima aumentada */
+    background-color: rgb(248, 245, 245);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra mais pronunciada */
+}
+
+/* Mapa */
+/* Estilo original para computadores - Mantido */
+.container-map .map {
+    flex: 1 1 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-map iframe {
+    width: 600px; /* Mantém largura fixa no computador */
+    height: 500px; /* Mantém altura fixa no computador */
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container-map .text {
+    padding: 20px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+.container-map a{
+    color: #000000;
+    text-decoration: none;
+
+}
+.container-map p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+.container-map h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Ajustes mínimos somente para dispositivos móveis */
+@media (max-width: 768px) {
+    .container-map iframe {
+        width: 100%; /* Adapta o mapa à largura da tela */
+        height: auto; /* Mantém a proporção, mas ajusta a altura */
+    }
+
+    .container-map .text {
+        font-size: 14px; /* Reduz levemente a fonte */
+        padding: 15px; /* Ajusta o espaçamento */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-map iframe {
+        width: 100%; /* Preenche a largura do dispositivo */
+        height: auto; /* Altura proporcional */
+    }
+
+    .container-map .text {
+        font-size: 13px; /* Texto menor */
+        padding: 10px; /* Reduz ainda mais o espaçamento */
+    }
+}
+
+
+/* Imagens Incons do index.html */
+/* Container dos ícones */
+.icon-container {
+    display: flex;
+    /* Ativa Flexbox */
+    justify-content: space-between;
+    /* Espaço uniforme entre os ícones */
+    align-items: center;
+    /* Alinha os ícones verticalmente */
+    margin: 40px auto;
+    /* Espaço em cima e em baixo */
+    max-width: 1200px;
+    /* Largura máxima do container */
+    padding: 20px;
+}
+
+/* Cada ícone */
+.icon {
+    flex: 1 1 auto;
+    /* Cada ícone ocupa espaço flexível */
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo no ícone */
+    align-items: center;
+    padding: 10px;
+    margin: 0 50px;
+    /* Espaço adicional entre os ícones */
+}
+
+/* Imagens */
+.icon img {
+    width: 80px;
+    /* Largura do ícone */
+    height: 80px;
+    /* Altura do ícone */
+    border: 2px solid #Ff9933;
+    /* Borda laranja */
+    border-radius: 8px;
+    /* Cantos arredondados */
+    background-color: #fff7ef;
+    /* Fundo claro */
+    box-shadow: 0 4px 8px rgba(94, 18, 18, 0.2);
+    /* Sombra */
+    transition: transform 0.3s ease;
+    /* Efeito ao passar o rato */
+}
+
+/* Efeito ao passar o rato */
+.icon img:hover {
+    transform: scale(1.1);
+    /* Amplia o ícone ligeiramente */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+
+    /* Ajuste no container dos ícones para se adaptar a telas pequenas */
+    .icon-container {
+        flex-direction: column;
+        /* Coloca os ícones em coluna em vez de linha */
+        align-items: center;
+        /* Centraliza os ícones */
+        padding: 10px;
+        /* Reduz o padding */
+    }
+
+    /* Ajuste em cada ícone para que fiquem em linha no mobile */
+    .icon {
+        margin: 10px 0;
+        /* Diminui a margem entre os ícones em dispositivos móveis */
+    }
+
+    /* Ajuste no tamanho dos ícones em telas menores */
+    .icon img {
+        width: 60px;
+        /* Diminui o tamanho do ícone */
+        height: 60px;
+        /* Mantém a proporção */
+    }
+}
+
+
+/* Areassssssss */
+/* Estilo base */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 12px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.column:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.column img {
+    flex: 1;
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column .text-overlay {
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #000000;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    background-color: #fbf7f4;
+}
+
+.column h3 {
+    font-size: 20px;
+    color: #080808;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.column p{
+
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .column {
+        flex-direction: column !important; /* Força a direção para coluna */
+        text-align: center;
+    }
+
+    .column img {
+        order: -1; /* Move a imagem para o topo */
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .column .text-overlay {
+        order: 1; /* Mantém o texto abaixo da imagem */
+    }
+}
+
+
+
+/*Textos Inicio*/
+
+.o-que-fazemos {
+    text-align: left;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+.o-que-fazemos h2 {
+    text-align: center;
+    color: #ff8800;
+    margin-bottom: 20px;
+}
+
+.o-que-fazemos ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.o-que-fazemos li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.quem-somos {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 1px auto;
+    max-width: 1000px;
+}
+
+.quem-somos h2 {
+    color: #ff8800;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.quem-somos p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}

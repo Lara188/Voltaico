@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #f9f9f9;
+}
+
+.circulo,
+.semi-circle {
+    text-align: center;
+    background-color: #e8d1ba;
+    padding: 20px 0;
+    border-radius: 0 0 50px 50px;
+}
+.circulo a,
+.semi-circle a {
+    text-decoration: none;
+}
+
+.logo-center {
+    margin: 0 auto;
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(253, 133, 53);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #Ff9933;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #e8d1ba;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    /* Empurra o footer para o fundo */
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer section {
+    flex: 1 1 200px;
+    margin: 10px 15px;
+}
+
+footer h4 {
+    font-size: 20px!important;
+    margin-bottom: 10px!important;
+    color: #Ff9933!important;
+    font-weight: bold!important;
+}
+
+footer p,
+footer a {
+    font-size: 15px!important;
+    line-height: 1.8!important;
+    color: rgb(253, 133, 53)!important;
+    text-decoration: none!important;
+}
+
+footer a:hover {
+    color: #Ff9933;
+}
+
+footer img {
+    display: block;
+    margin: 10 auto 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+footer section img {
+    display: inline-block; /* Torna os ícones alinháveis horizontalmente */
+    margin: 0 5px; /* Adiciona um pequeno espaçamento horizontal entre os ícones */
+    vertical-align: middle; /* Alinha os ícones verticalmente no meio */
+}
+
+/* Responsivo para footer */
+@media (max-width: 768px) {
+    footer div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section {
+        text-align: center;
+    }
+}

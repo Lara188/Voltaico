@@ -6,6 +6,7 @@ body {
     margin-right: 2%;
     display: flex;
     flex-direction: column;
+    background-color: #d6efe5;
 }
 
 body {
@@ -39,7 +40,7 @@ body {
 
 nav {
     margin: 20px;
-    /* Adiciona espaço à esquerda do menu */
+    
 }
 
 nav ul {
@@ -48,7 +49,7 @@ nav ul {
     padding: 0;
     display: inline-block;
     font-family: 'Arial', sans-serif;
-    /* Define uma fonte consistente */
+    
 }
 
 nav ul li {
@@ -58,36 +59,27 @@ nav ul li {
 
 nav ul li a {
     color: rgb(253, 133, 53);
-    /* Cor do texto */
     text-decoration: none;
-    /* Remove sublinhado */
     font-size: 18px;
-    /* Tamanho do texto */
     font-weight: bold;
-    /* Peso da fonte */
     transition: color 0.3s;
     text-transform: uppercase;
-    /* Mantém as letras maiúsculas (se necessário) */
 }
 
 nav ul li a.active {
     font-weight: bold;
-    /* Negrito para o item ativo */
     color: #532b02;
-    /* Pode também alterar a cor se quiser */
 }
 
 nav ul li a:hover {
     color: #Ff9933;
-    /* Cor ao passar o rato */
+    
 }
 
 /* Carrossel */
 .carousel-inner {
     border-radius: 0 0 50px 50px;
-    /* Arredonda apenas as bordas inferiores */
     overflow: hidden;
-    /* Impede o conteúdo de ultrapassar as bordas */
 }
 
 .carousel-inner .item img {
@@ -95,23 +87,39 @@ nav ul li a:hover {
     height: 450px;
     display: block;
     object-fit: cover;
-    /* Ajusta a imagem para não distorcer */
     margin: 0 auto;
     border-radius: 0;
-    /* Remove qualquer arredondamento aplicado diretamente à imagem */
+    color: #FFFFFF;
 }
 
 .carousel-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Assegura que a imagem preenche o carrossel sem distorcer */
 }
 
 .carousel-control {
     border-radius: 0 0 50px 50px;
-    /* Arredonda apenas as bordas inferiores */
 }
+
+/* Texto personalizado por cima de cada slide do carrossel */
+.carousel-caption-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF; /* Agora sim branco certo */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 100px;
+    font-weight: 900;
+    z-index: 10;
+}
+
+
+
+
 
 /* Footer */
 footer {
@@ -122,7 +130,6 @@ footer {
     border-radius: 8px 8px 0 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     margin-top: auto;
-    /* Empurra o footer para o fundo */
 }
 
 footer div {
@@ -136,21 +143,23 @@ footer div {
 footer section {
     flex: 1 1 200px;
     margin: 10px 15px;
+    
+    
 }
 
 footer h4 {
-    font-size: 20px!important;
-    margin-bottom: 10px!important;
-    color: #Ff9933!important;
-    font-weight: bold!important;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #Ff9933;
+    font-weight: bold;
 }
 
 footer p,
 footer a {
-    font-size: 15px!important;
-    line-height: 1.8!important;
-    color: rgb(253, 133, 53)!important;
-    text-decoration: none!important;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgb(253, 133, 53);
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -164,9 +173,21 @@ footer img {
     height: auto;
 }
 footer section img {
-    display: inline-block; /* Torna os ícones alinháveis horizontalmente */
-    margin: 0 5px; /* Adiciona um pequeno espaçamento horizontal entre os ícones */
-    vertical-align: middle; /* Alinha os ícones verticalmente no meio */
+    display: inline-block; 
+    margin: 0 5px; 
+    vertical-align: middle; 
+
+    
+}
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px;
+
+}
+.redes-sociais img:hover {
+    transform: scale(1.5);
 }
 
 /* Responsivo para footer */
@@ -185,24 +206,17 @@ footer section img {
 .container-map {
     display: flex;
     flex-wrap: nowrap;
-    /* Itens numa só linha */
     justify-content: space-between;
-    /* Espaço entre o mapa e as informações */
     align-items: flex-start;
     margin: 50px auto;
-    /* Margem maior para o container */
     padding: 30px;
-    /* Espaço interno maior */
     max-width: 1900px;
-    /* Largura máxima aumentada */
-    background-color: rgb(248, 245, 245);
+    background-color: #e8d1ba;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    /* Sombra mais pronunciada */
 }
 
 /* Mapa */
-/* Estilo original para computadores - Mantido */
 .container-map .map {
     flex: 1 1 60%;
     padding: 20px;
@@ -210,8 +224,8 @@ footer section img {
 }
 
 .container-map iframe {
-    width: 600px; /* Mantém largura fixa no computador */
-    height: 500px; /* Mantém altura fixa no computador */
+    width: 600px; 
+    height: 500px; 
     border: 0;
     border-radius: 12px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
@@ -226,8 +240,8 @@ footer section img {
 .container-map a{
     color: #000000;
     text-decoration: none;
-
 }
+
 .container-map p{
     font-size: 18px;
     line-height: 1.8;
@@ -239,16 +253,15 @@ footer section img {
     font-size: 20px;
 }
 
-/* Ajustes mínimos somente para dispositivos móveis */
 @media (max-width: 768px) {
     .container-map iframe {
         width: 100%; /* Adapta o mapa à largura da tela */
-        height: auto; /* Mantém a proporção, mas ajusta a altura */
+        height: auto; 
     }
 
     .container-map .text {
         font-size: 14px; /* Reduz levemente a fonte */
-        padding: 15px; /* Ajusta o espaçamento */
+        padding: 15px; 
     }
 }
 
@@ -259,96 +272,76 @@ footer section img {
     }
 
     .container-map .text {
-        font-size: 13px; /* Texto menor */
-        padding: 10px; /* Reduz ainda mais o espaçamento */
+        font-size: 13px; 
+        padding: 10px; 
     }
 }
 
-
 /* Imagens Incons do index.html */
-/* Container dos ícones */
 .icon-container {
     display: flex;
-    /* Ativa Flexbox */
     justify-content: space-between;
-    /* Espaço uniforme entre os ícones */
     align-items: center;
-    /* Alinha os ícones verticalmente */
     margin: 40px auto;
-    /* Espaço em cima e em baixo */
     max-width: 1200px;
-    /* Largura máxima do container */
     padding: 20px;
 }
 
 /* Cada ícone */
 .icon {
     flex: 1 1 auto;
-    /* Cada ícone ocupa espaço flexível */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* Centraliza o conteúdo no ícone */
     align-items: center;
     padding: 10px;
     margin: 0 50px;
-    /* Espaço adicional entre os ícones */
+}
+
+.legenda {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #0a0a0a;
+    font-weight: bold;
 }
 
 /* Imagens */
 .icon img {
     width: 80px;
-    /* Largura do ícone */
     height: 80px;
-    /* Altura do ícone */
-    border: 2px solid #Ff9933;
-    /* Borda laranja */
+    border: 2px solid #Ff9933; /* Borda laranja */
     border-radius: 8px;
-    /* Cantos arredondados */
     background-color: #fff7ef;
-    /* Fundo claro */
     box-shadow: 0 4px 8px rgba(94, 18, 18, 0.2);
-    /* Sombra */
     transition: transform 0.3s ease;
-    /* Efeito ao passar o rato */
 }
 
 /* Efeito ao passar o rato */
 .icon img:hover {
     transform: scale(1.1);
-    /* Amplia o ícone ligeiramente */
 }
 
-/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
 
     /* Ajuste no container dos ícones para se adaptar a telas pequenas */
     .icon-container {
         flex-direction: column;
-        /* Coloca os ícones em coluna em vez de linha */
         align-items: center;
-        /* Centraliza os ícones */
         padding: 10px;
-        /* Reduz o padding */
     }
 
-    /* Ajuste em cada ícone para que fiquem em linha no mobile */
     .icon {
-        margin: 10px 0;
-        /* Diminui a margem entre os ícones em dispositivos móveis */
+        margin: 10px 0;/
     }
 
-    /* Ajuste no tamanho dos ícones em telas menores */
     .icon img {
         width: 60px;
-        /* Diminui o tamanho do ícone */
         height: 60px;
-        /* Mantém a proporção */
     }
 }
 
 
 /* Areassssssss */
-/* Estilo base */
 .container {
     display: flex;
     flex-direction: column;
@@ -366,7 +359,7 @@ footer section img {
     gap: 20px;
     padding: 20px;
     border-radius: 12px;
-    background-color: transparent;
+    background-color: #e8d1ba;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -395,7 +388,7 @@ footer section img {
     font-size: 19px;
     color: #000000;
     line-height: 1.6;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     background-color: #fbf7f4;
 }
@@ -413,6 +406,14 @@ footer section img {
     line-height: 1.8;
     color: #333;
     margin-bottom: 20px;
+}
+
+.text-overlay img {
+    transition: transform 0.3s ease;
+}
+
+.text-overlay img:hover {
+    transform: scale(2);
 }
 
 /* Estilo responsivo */
@@ -436,7 +437,6 @@ footer section img {
 
 
 /*Textos Inicio*/
-
 .o-que-fazemos {
     text-align: left;
     margin: 10px auto;
